@@ -6,7 +6,7 @@
 
 
 using namespace std;
-#define COUNT 4096
+#define COUNT 128
 
 
 int main () {
@@ -51,8 +51,12 @@ for(i=0;i<COUNT;i++)
         	if (ss.peek() == ',' || ss.peek() == ' ')
             	ss.ignore();
 		j++;
+		if (j==COUNT)
+			break;
 	}
-	i++;      
+	i++;
+	if (i==COUNT)
+		break;      
   }
     matrix1.close();
 }
@@ -84,8 +88,12 @@ if(s1=='y')
         	if (ss.peek() == ',' || ss.peek() == ' ')
             	ss.ignore();
 		j++;
+		if (j==COUNT)
+			break;
 	}
 	i++;      
+	if (i==COUNT)
+		break;      
   }
     matrix2.close();
 }
@@ -112,6 +120,8 @@ gettimeofday(&start,NULL); //Start timing the computation
     }
 gettimeofday(&end,NULL); //Stop timing the computation
 double myTime = (end.tv_sec+(double)end.tv_usec/1000000) - (start.tv_sec+(double)start.tv_usec/1000000);
+
+cout << "Count is " << COUNT<<"\n";
 
 cout << "k-i-j i-j_cilk  implemented in " << myTime << " seconds.\n";
 
