@@ -4,6 +4,7 @@
 #include <sys/time.h>
 #include <cilk/cilk.h>
 #include <limits.h>
+#include <stdlib.h>
 using namespace std;
 #define COUNT 8192
 
@@ -32,7 +33,7 @@ int** X = new int*[COUNT];
 int** Y = new int*[COUNT];
 int** Z = new int*[COUNT];
 //Z[8][8];
-int m = 1;
+int m = 8;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -40,6 +41,7 @@ int main(int argc, const char * argv[]) {
     char s1, s2;
     int i, j,k, value;
     struct timeval start,end;
+   // m = atoi(argv[1]);
     for(i = 0; i < COUNT; i++)
     {
         X[i] = new int[COUNT];
@@ -60,15 +62,10 @@ int main(int argc, const char * argv[]) {
             Z[i][j] = INT_MAX/15;
     
     for(i=0;i<COUNT-1;i++)
-        Z[i][i+1]=1;
-    
-
+        Z[i][i+1]=1;  
     
     
-    
-    
-    
-    ifstream matrix1 ("matrix1.txt");
+/*    ifstream matrix1 ("matrix1.txt");
     if (matrix1.is_open())
     {
         i = 0;
@@ -130,7 +127,7 @@ int main(int argc, const char * argv[]) {
         else cout << "Unable to open file";
     }
     
-    
+  */  
     
 //    std::cout << "Hello, World!\n";
   //  printf("Min of 4 5 = %d \n", min(4,5));
@@ -145,6 +142,9 @@ int main(int argc, const char * argv[]) {
   //  Aloopser(0,0,COUNT);
    // SerPar(0,0,COUNT);
   //  printZ();
+     delete [] X;
+delete [] Y;
+delete [] Z;
     return 0;
 }
 
