@@ -33,7 +33,7 @@ int** X;
 int** Y;
 int** Z;
 //Z[8][8];
-int m = 8;
+int m = 4;
 int COUNT;
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -41,8 +41,8 @@ int main(int argc, const char * argv[]) {
     char s1, s2;
     int i, j,k, value;
     struct timeval start,end;
- //   COUNT = atoi(argv[1]);
-    COUNT = 16;
+    COUNT = atoi(argv[1]);
+ //   COUNT = 16;
     X = new int*[COUNT];
     Y = new int*[COUNT];
     Z = new int*[COUNT];
@@ -146,7 +146,7 @@ int main(int argc, const char * argv[]) {
 
   //  Aloopser(0,0,COUNT);
    // SerPar(0,0,COUNT);
-    printZ();
+ //   printZ();
      delete [] X;
 delete [] Y;
 delete [] Z;
@@ -172,7 +172,7 @@ void Apar(int Xi,int Xj, int Xn)
 
 void Bpar(int Xi,int Xj, int Xn, int Ui, int Uj, int Un, int Vi,int Vj, int Vn)
 {
-    if (Xn > 1)
+    if (Xn > m)
     {
         Bpar(Xi+(Xn/2),Xj,Xn/2, Ui+(Un/2), Uj+(Un/2), Un/2, Vi,Vj,Vn/2); //Bpar( X21, U22, V11 )
         
@@ -268,7 +268,7 @@ void Aloopser(int Xi, int Xj, int Xn)
 void Bloopser(int Xi, int Xj, int Xn, int Ui, int Uj, int Vi, int Vj)
 {
     int i,j,n,t,k;
-    for (t = Xn-1; t >= 0; t--){
+/*    for (t = Xn-1; t >= 0; t--){
         for(i =t ; i < Xn; i++){
             j = i - t;
             for (k=i; k < Xn; k++){
@@ -279,9 +279,9 @@ void Bloopser(int Xi, int Xj, int Xn, int Ui, int Uj, int Vi, int Vj)
                 Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Ui+i][Uj+k]+Z[Vi+k][Vj+j]);
             }
         }
-    }
+    }*/
 
-/*for (int i = 0; i < Xn; i++) {
+for (int i = 0; i < Xn; i++) {
     int j = 0;
     int k = Xn - 1;
                 Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Ui+i][Uj+k]+Z[Xi+Xn-1][Xj+j]);
@@ -290,14 +290,14 @@ void Bloopser(int Xi, int Xj, int Xn, int Ui, int Uj, int Vi, int Vj)
 for (int i = 0; i < Xn; i++) {
     for (int j = 1; j < Xn; j++) {
         for (int k = 0; k < Xn; k++) {
-                Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Ui+i][Uj+k]+Z[Vi+k][Vj+j]);
+                Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Ui+i][Uj+k]+Z[Xi+k][Xj+j]);
         }
         for (int k = 0; k < j; k++) {
                 Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Xi+i][Xj+k]+Z[Vi+k][Vj+j]);
         }
     }
 
-}*/
+}
 }
 void Cloopser(int Xi, int Xj, int Xn, int Ui, int Uj, int Vi, int Vj)
 {
