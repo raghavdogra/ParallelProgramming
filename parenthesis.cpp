@@ -6,7 +6,7 @@
 #include <limits.h>
 #include <stdlib.h>
 using namespace std;
-#define COUNT 8192
+//#define COUNT 8192
 
 
 void matMultiply(int Zx0, int Zxn, int Zy0,int Zyn, int Xx0, int Xxn, int Xy0, int Xyn, int Yx0, int Yxn, int Yy0,int  Yyn, int n);
@@ -29,19 +29,24 @@ void Cloopser(int Xi, int Xj, int Xn, int, int, int, int);
 
 int mymin(int x, int y);
 
-int** X = new int*[COUNT];
-int** Y = new int*[COUNT];
-int** Z = new int*[COUNT];
+int** X;
+int** Y;
+int** Z;
 //Z[8][8];
 int m = 8;
-
+int COUNT;
 int main(int argc, const char * argv[]) {
     // insert code here...
     string line;
     char s1, s2;
     int i, j,k, value;
     struct timeval start,end;
-   // m = atoi(argv[1]);
+ //   COUNT = atoi(argv[1]);
+    COUNT = 16;
+    X = new int*[COUNT];
+    Y = new int*[COUNT];
+    Z = new int*[COUNT];
+
     for(i = 0; i < COUNT; i++)
     {
         X[i] = new int[COUNT];
@@ -141,7 +146,7 @@ int main(int argc, const char * argv[]) {
 
   //  Aloopser(0,0,COUNT);
    // SerPar(0,0,COUNT);
-  //  printZ();
+    printZ();
      delete [] X;
 delete [] Y;
 delete [] Z;
@@ -275,8 +280,25 @@ void Bloopser(int Xi, int Xj, int Xn, int Ui, int Uj, int Vi, int Vj)
             }
         }
     }
+
+/*for (int i = 0; i < Xn; i++) {
+    int j = 0;
+    int k = Xn - 1;
+                Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Ui+i][Uj+k]+Z[Xi+Xn-1][Xj+j]);
 }
 
+for (int i = 0; i < Xn; i++) {
+    for (int j = 1; j < Xn; j++) {
+        for (int k = 0; k < Xn; k++) {
+                Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Ui+i][Uj+k]+Z[Vi+k][Vj+j]);
+        }
+        for (int k = 0; k < j; k++) {
+                Z[Xi+i][Xj+j]=min(Z[Xi+i][Xj+j],Z[Xi+i][Xj+k]+Z[Vi+k][Vj+j]);
+        }
+    }
+
+}*/
+}
 void Cloopser(int Xi, int Xj, int Xn, int Ui, int Uj, int Vi, int Vj)
 {
     int i,j,n,t,k;
