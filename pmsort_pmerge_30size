@@ -1,0 +1,112 @@
+ 1
+Run with arr_size: 67108864
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 0.949515 seconds.
+Parmsort: 17.7228 seconds.
+ 2
+Run with arr_size: 134217728
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 1.89479 seconds.
+Parmsort: 20.1834 seconds.
+ 3
+Run with arr_size: 201326592
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 2.84851 seconds.
+Parmsort: 19.0959 seconds.
+ 4
+Run with arr_size: 268435456
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 3.80231 seconds.
+Parmsort: 18.7771 seconds.
+ 5
+Run with arr_size: 335544320
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 4.76859 seconds.
+Parmsort: 22.5647 seconds.
+ 6
+Run with arr_size: 402653184
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 5.7073 seconds.
+Parmsort: 21.7855 seconds.
+ 7
+Run with arr_size: 469762048
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 6.62816 seconds.
+Parmsort: 20.8566 seconds.
+ 8
+Run with arr_size: 536870912
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 7.6077 seconds.
+Parmsort: 20.976 seconds.
+ 9
+Run with arr_size: 603979776
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 8.5189 seconds.
+Parmsort: 20.6815 seconds.
+ 10
+Run with arr_size: 671088640
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 9.51512 seconds.
+Parmsort: 20.0387 seconds.
+ 11
+Run with arr_size: 738197504
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 10.4136 seconds.
+Parmsort: 20.2301 seconds.
+ 12
+Run with arr_size: 805306368
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 11.3557 seconds.
+Parmsort: 19.999 seconds.
+ 13
+Run with arr_size: 872415232
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 12.2894 seconds.
+Parmsort: 20.2419 seconds.
+ 14
+Run with arr_size: 939524096
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 13.3208 seconds.
+Parmsort: 21.5366 seconds.
+ 15
+Run with arr_size: 1006632960
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 14.1843 seconds.
+Parmsort: 20.8302 seconds.
+ 16
+Run with arr_size: 1073741824
+Base Length: 8
+Base P merge: 32768
+Init started
+Init done 15.166 seconds.
+Parmsort: 22.3179 seconds.
