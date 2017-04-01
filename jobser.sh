@@ -13,11 +13,10 @@
 #input=30
 #max=30
 #min=13
-rm -f pmsort_pmerge_30size
+rm -f pmsort_smerge_30size
 for((processor=1; processor <= 16; processor++))
 do
-                echo " $processor"  >> pmsort_pmerge_30size
-		export CILK_NWORKERS=$processor
-    ./pmsort_pmerge $processor 3 15 >> pmsort_pmerge_30size
+                echo " $processor"  >> pmsort_smerge_30size
+                export CILK_NWORKERS=$processor
+    ./pmsort_smerge $processor 3 15 >> pmsort_smerge_30size
 done
-
