@@ -1,0 +1,95 @@
+ 2
+Run with arr_size: 4
+Init started
+Init done 1.19209e-06 seconds.
+Parallel Bubble Sort Done in 0.00137496 seconds.
+ 3
+Run with arr_size: 8
+Init started
+Init done 9.53674e-07 seconds.
+Parallel Bubble Sort Done in 0.00130987 seconds.
+ 4
+Run with arr_size: 16
+Init started
+Init done 9.53674e-07 seconds.
+Parallel Bubble Sort Done in 0.00114298 seconds.
+ 5
+Run with arr_size: 32
+Init started
+Init done 9.53674e-07 seconds.
+Parallel Bubble Sort Done in 0.00125194 seconds.
+ 6
+Run with arr_size: 64
+Init started
+Init done 9.53674e-07 seconds.
+Parallel Bubble Sort Done in 0.00143886 seconds.
+ 7
+Run with arr_size: 128
+Init started
+Init done 3.09944e-06 seconds.
+Parallel Bubble Sort Done in 0.0133071 seconds.
+ 8
+Run with arr_size: 256
+Init started
+Init done 4.05312e-06 seconds.
+Parallel Bubble Sort Done in 0.0103061 seconds.
+ 9
+Run with arr_size: 512
+Init started
+Init done 6.91414e-06 seconds.
+Parallel Bubble Sort Done in 0.0177629 seconds.
+ 10
+Run with arr_size: 1024
+Init started
+Init done 1.3113e-05 seconds.
+Parallel Bubble Sort Done in 0.0247672 seconds.
+ 11
+Run with arr_size: 2048
+Init started
+Init done 2.7895e-05 seconds.
+Parallel Bubble Sort Done in 0.031404 seconds.
+ 12
+Run with arr_size: 4096
+Init started
+Init done 5.6982e-05 seconds.
+Parallel Bubble Sort Done in 0.0340562 seconds.
+ 13
+Run with arr_size: 8192
+Init started
+Init done 0.000111818 seconds.
+Parallel Bubble Sort Done in 0.0456629 seconds.
+ 14
+Run with arr_size: 16384
+Init started
+Init done 0.000225067 seconds.
+Parallel Bubble Sort Done in 0.171561 seconds.
+ 15
+Run with arr_size: 32768
+Init started
+Init done 0.000452042 seconds.
+Parallel Bubble Sort Done in 0.61415 seconds.
+ 16
+Run with arr_size: 65536
+Init started
+Init done 0.000903845 seconds.
+Parallel Bubble Sort Done in 2.25476 seconds.
+ 17
+Run with arr_size: 131072
+Init started
+Init done 0.00179887 seconds.
+Parallel Bubble Sort Done in 8.90501 seconds.
+ 18
+Run with arr_size: 262144
+Init started
+Init done 0.00362206 seconds.
+Parallel Bubble Sort Done in 35.7777 seconds.
+ 19
+Run with arr_size: 524288
+Init started
+Init done 0.00724483 seconds.
+Parallel Bubble Sort Done in 149.714 seconds.
+ 20
+Run with arr_size: 1048576
+Init started
+Init done 0.0145769 seconds.
+Parallel Bubble Sort Done in 571.475 seconds.

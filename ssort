@@ -1,0 +1,91 @@
+ 2
+Run with arr_size: 4
+Init started
+Init done 9.53674e-07 seconds.
+Parallel selection sort done in 0.00131702 seconds.
+ 3
+Run with arr_size: 8
+Init started
+Init done 0 seconds.
+Parallel selection sort done in 0.00129604 seconds.
+ 4
+Run with arr_size: 16
+Init started
+Init done 9.53674e-07 seconds.
+Parallel selection sort done in 0.00130486 seconds.
+ 5
+Run with arr_size: 32
+Init started
+Init done 9.53674e-07 seconds.
+Parallel selection sort done in 0.00152612 seconds.
+ 6
+Run with arr_size: 64
+Init started
+Init done 2.14577e-06 seconds.
+Parallel selection sort done in 0.00143099 seconds.
+ 7
+Run with arr_size: 128
+Init started
+Init done 1.90735e-06 seconds.
+Parallel selection sort done in 0.0199049 seconds.
+ 8
+Run with arr_size: 256
+Init started
+Init done 2.86102e-06 seconds.
+Parallel selection sort done in 0.022001 seconds.
+ 9
+Run with arr_size: 512
+Init started
+Init done 6.91414e-06 seconds.
+Parallel selection sort done in 0.011662 seconds.
+ 10
+Run with arr_size: 1024
+Init started
+Init done 1.38283e-05 seconds.
+Parallel selection sort done in 0.00981593 seconds.
+ 11
+Run with arr_size: 2048
+Init started
+Init done 2.7895e-05 seconds.
+Parallel selection sort done in 0.00569797 seconds.
+ 12
+Run with arr_size: 4096
+Init started
+Init done 5.60284e-05 seconds.
+Parallel selection sort done in 0.036577 seconds.
+ 13
+Run with arr_size: 8192
+Init started
+Init done 0.000113964 seconds.
+Parallel selection sort done in 0.063791 seconds.
+ 14
+Run with arr_size: 16384
+Init started
+Init done 0.00022912 seconds.
+Parallel selection sort done in 0.166631 seconds.
+ 15
+Run with arr_size: 32768
+Init started
+Init done 0.000451088 seconds.
+Parallel selection sort done in 0.644965 seconds.
+ 16
+Run with arr_size: 65536
+Init started
+Init done 0.000904083 seconds.
+Parallel selection sort done in 2.19938 seconds.
+ 17
+Run with arr_size: 131072
+Init started
+Init done 0.00180101 seconds.
+Parallel selection sort done in 9.38897 seconds.
+ 18
+Run with arr_size: 262144
+Init started
+Init done 0.00362515 seconds.
+Parallel selection sort done in 37.7268 seconds.
+ 19
+Run with arr_size: 524288
+Init started
+Init done 0.00729299 seconds.
+Parallel selection sort done in 146.274 seconds.
+ 20
