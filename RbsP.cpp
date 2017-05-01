@@ -6,7 +6,7 @@ using namespace std;
 #include <stdbool.h>
 #include <cilk/cilk.h>
 #include <iostream>
-
+#include "parallel_merge.h"
 struct timeval start,end;
 
 
@@ -20,7 +20,7 @@ void R_BS(int *A,int l ,int h,int n)
 	{
 		for(i = l; i <=h; i++)
 		{
-			for(j = l; j < l + h - i - 1; j++)
+			for(j = l; j <= l + h - i - 1; j++)
 			{
 				if(A[j] > A[j+1])
 				{
@@ -75,31 +75,20 @@ int temp, lm,rm,i,j ;
 	}
 }
 
-void main()
+int main(int c, char *args[])
 {
-	int i, A[10];
-	srand(time(NULL));
-       	
-	for(i = 0; i< 10; i++)
-	{
-		int r = rand();
-		A[i] = r;
-	}
-	
-//	for(i = 0; i< 10; i++)
-//	{
-//		printf("%d\t",A[i]);
-//	}
-	gettimeofday(&start,NULL); 
-	R_BS(A,0,9,10);
+	int n = atoi(args[1]);
+	int i;
+    	srand(time(NULL));
+    
+    ARR_SIZE = (1 << n);
+    cout << "Run with arr_size: " << ARR_SIZE << "\n";
+    init_arr();
+	gettimeofday(&start,NULL);
+	R_BS(A,0,ARR_SIZE-1,ARR_SIZE);
 	gettimeofday(&end,NULL); 
-	printf("\n\n");
 	 double myTime = (end.tv_sec+(double)end.tv_usec/1000000) - (start.tv_sec+(double)start.tv_usec/1000000);
-    	cout << "Parallel MergeSort with parallel merge and base case serial merge implemented in " << myTime << " seconds.\n";
-
-//	for(i = 0; i< 10; i++)
-//	{
-//		printf("%d\t",A[i]);
-//	}
+    	cout << "Parallel Bubble Sort Done in " << myTime << " seconds.\n";
+	destroy_arr();
 }
 

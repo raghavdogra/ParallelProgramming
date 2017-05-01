@@ -12,7 +12,7 @@ void R_BS(int *A,int l ,int h,int n)
 	{
 		for(i = l; i <=h; i++)
 		{
-			for(j = l; j < l + h - i - 1; j++)
+			for(j = l; j <= l + h - i - 1; j++)
 			{
 				if(A[j] > A[j+1])
 				{
@@ -48,12 +48,12 @@ int temp, lm,rm,i,j ;
 					A[j+1] = temp;
 				}
 			}
-		if(A[lh] > A[i])
-		{
-			temp = A[lh];
-			A[lh] = A[i];
-			A[i] = temp;
-		}
+			if(A[lh] > A[i])
+			{
+				temp = A[lh];
+				A[lh] = A[i];
+				A[i] = temp;
+			}
 		}
 	}
 	else
@@ -88,5 +88,6 @@ void main()
 	{
 		printf("%d\t",A[i]);
 	}
+	printf("\n\n");
 }
 

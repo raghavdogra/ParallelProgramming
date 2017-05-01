@@ -2,84 +2,95 @@
 Run with arr_size: 67108864and n =1
 Base Length: 8
 Init started
-Init done 0.926642 seconds.
-Parmsort: 18.4655 seconds.
+Init done 0.930637 seconds.
+Parmsort: 18.4818 seconds.
  2
 Run with arr_size: 134217728and n =2
 Base Length: 8
 Init started
-Init done 1.85271 seconds.
-Parmsort: 20.5408 seconds.
+Init done 1.86364 seconds.
+Parmsort: 20.5301 seconds.
  3
 Run with arr_size: 201326592and n =3
 Base Length: 8
 Init started
-Init done 2.78735 seconds.
-Parmsort: 22.3032 seconds.
+Init done 2.77257 seconds.
+Parmsort: 22.2141 seconds.
  4
 Run with arr_size: 268435456and n =4
 Base Length: 8
 Init started
-Init done 3.69957 seconds.
-Parmsort: 24.1756 seconds.
+Init done 3.71706 seconds.
+Parmsort: 24.2148 seconds.
  5
 Run with arr_size: 335544320and n =5
 Base Length: 8
 Init started
-Init done 4.61792 seconds.
-Parmsort: 24.7261 seconds.
+Init done 4.63208 seconds.
+Parmsort: 24.6768 seconds.
  6
 Run with arr_size: 402653184and n =6
 Base Length: 8
 Init started
-Init done 5.5438 seconds.
-Parmsort: 25.9729 seconds.
+Init done 5.5407 seconds.
+Parmsort: 25.8408 seconds.
  7
 Run with arr_size: 469762048and n =7
 Base Length: 8
 Init started
-Init done 6.48941 seconds.
-Parmsort: 28.2277 seconds.
+Init done 6.4795 seconds.
+Parmsort: 28.5038 seconds.
  8
 Run with arr_size: 536870912and n =8
 Base Length: 8
 Init started
-Init done 7.42632 seconds.
-Parmsort: 30.3426 seconds.
+Init done 7.42967 seconds.
+Parmsort: 29.3075 seconds.
  9
 Run with arr_size: 603979776and n =9
 Base Length: 8
 Init started
-Init done 8.37164 seconds.
-Parmsort: 32.0101 seconds.
+Init done 8.30056 seconds.
+Parmsort: 31.956 seconds.
  10
 Run with arr_size: 671088640and n =10
 Base Length: 8
 Init started
-Init done 9.24695 seconds.
-Parmsort: 33.0649 seconds.
+Init done 9.27163 seconds.
+Parmsort: 31.6304 seconds.
  11
 Run with arr_size: 738197504and n =11
 Base Length: 8
 Init started
-Init done 10.2111 seconds.
-Parmsort: 34.3176 seconds.
+Init done 10.1722 seconds.
+Parmsort: 33.3365 seconds.
  12
 Run with arr_size: 805306368and n =12
 Base Length: 8
 Init started
-Init done 11.0912 seconds.
-Parmsort: 36.603 seconds.
+Init done 11.1583 seconds.
+Parmsort: 35.8452 seconds.
  13
 Run with arr_size: 872415232and n =13
 Base Length: 8
 Init started
-Init done 12.0813 seconds.
-Parmsort: 36.9936 seconds.
+Init done 12.0026 seconds.
+Parmsort: 32.5842 seconds.
  14
 Run with arr_size: 939524096and n =14
 Base Length: 8
 Init started
-Init done 12.9377 seconds.
-Parmsort: 37.6914 seconds.
+Init done 13.006 seconds.
+Parmsort: 35.4001 seconds.
  15
+Run with arr_size: 1006632960and n =15
+Base Length: 8
+Init started
+Init done 13.9532 seconds.
+Parmsort: 40.568 seconds.
+ 16
+Run with arr_size: 1073741824and n =16
+Base Length: 8
+Init started
+Init done 14.7754 seconds.
+Parmsort: 41.4966 seconds.

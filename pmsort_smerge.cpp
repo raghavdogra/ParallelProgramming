@@ -77,9 +77,9 @@ void mergeSort(int * A, int p, int r)
 int main(int argc, char *args[]) {
 	int n = atoi(args[1]);
 	struct timeval start,end;
-	ARR_SIZE = 1 << n;
+	ARR_SIZE = (1 << 26)*n;
 	BASE_LEN = 1 << atoi(args[2]);
-	cout << "Run with arr_size: " << ARR_SIZE << "\n";
+	cout << "Run with arr_size: " << ARR_SIZE <<"and n ="<< n<< "\n";
 	cout << "Base Length: " << BASE_LEN << "\n" ;
 
 	init_arr();
@@ -89,6 +89,6 @@ int main(int argc, char *args[]) {
 	double myTime = (end.tv_sec+(double)end.tv_usec/1000000) -
 			 (start.tv_sec+(double)start.tv_usec/1000000);
 	cout << "Parmsort: " << myTime << " seconds.\n";
-	printarr(A,ARR_SIZE);
+	//printarr(A,ARR_SIZE);
 	destroy_arr();
 }

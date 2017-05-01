@@ -2,10 +2,8 @@ CC=icpc
 CFLAGS=-O0
 
 all:
-	$(CC) $(CFLAGS) -o pmsort_pmerge pmsort_pmerge.cpp 
-	$(CC) $(CFLAGS) -o pmsort_smerge pmsort_smerge.cpp
-	$(CC) $(CFLAGS) -o serial_msort_merge serial_msort_merge.cpp 
+	$(CC) $(CFLAGS) -o rssp rssp.cpp 
+	$(CC) $(CFLAGS) -o RbsP RbsP.cpp
 clean:
-	rm -rf pmsort_pmerge
-	rm -rf pmsort_smerge
-	rm -rf serial_msort_merge
+	rm -rf rssp
+	rm -rf RbsP

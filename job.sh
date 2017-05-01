@@ -4,20 +4,11 @@
 #SBATCH -n 16           # Total number of  tasks requested
 #SBATCH -p development  # Queue (partition) name -- normal, development, etc.
 #SBATCH -t 02:00:00     # Run time (hh:mm:ss) - 1.5 hours
-#export CILK_NWORKERS=4
-#./pmsort_pmerge 8 3 8 > pm8_38
-#export CILK_NWORKERS=5
-#./pmsort_pmerge 10 3 8 > pm10_38
-#export CILK_NWORKERS=6
-#./pmsort_pmerge 12 3 8 > pm12_38
-#input=30
-#max=30
-#min=13
-rm -f pmsort_pmerge_30size
-for((processor=1; processor <= 16; processor++))
+#export CILK_NWORKERS=16
+rm -f ssort
+for((processor=2; processor <= 20; processor++))
 do
-                echo " $processor"  >> pmsort_pmerge_30size
-		export CILK_NWORKERS=$processor
-    ./pmsort_pmerge $processor 3 15 >> pmsort_pmerge_30size
+                echo " $processor"  >> ssort
+    ./rssp $processor  >> ssort
 done
 

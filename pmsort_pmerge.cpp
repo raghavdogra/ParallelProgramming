@@ -144,7 +144,7 @@ void pmergesort(int* from, long p, long r, int* dst, bool fromToDst)
 int main (int c, char *args[]) {
 	int n = atoi(args[1]);
 	struct timeval start,end;
-	ARR_SIZE = 1 << n;
+	ARR_SIZE = (1 << 26)*n;
 	BASE_LEN = 1 << atoi(args[2]);
 	BASE_PMERGE = 1 << atoi(args[3]);
 
