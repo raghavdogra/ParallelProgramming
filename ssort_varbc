@@ -1,0 +1,36 @@
+ 6
+Run with arr_size: 4096
+Run with base case: 64
+Init started
+Init done 5.50747e-05 seconds.
+Parallel selection sort done in 0.020828 seconds.
+ 7
+Run with arr_size: 4096
+Run with base case: 128
+Init started
+Init done 5.6982e-05 seconds.
+Parallel selection sort done in 0.028789 seconds.
+ 8
+Run with arr_size: 4096
+Run with base case: 256
+Init started
+Init done 5.79357e-05 seconds.
+Parallel selection sort done in 0.00947595 seconds.
+ 9
+Run with arr_size: 4096
+Run with base case: 512
+Init started
+Init done 5.6982e-05 seconds.
+Parallel selection sort done in 0.01686 seconds.
+ 10
+Run with arr_size: 4096
+Run with base case: 1024
+Init started
+Init done 5.6982e-05 seconds.
+Parallel selection sort done in 0.015671 seconds.
+ 11
+Run with arr_size: 4096
+Run with base case: 2048
+Init started
+Init done 5.6982e-05 seconds.
+Parallel selection sort done in 0.025099 seconds.

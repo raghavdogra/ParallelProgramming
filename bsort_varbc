@@ -1,0 +1,36 @@
+ 6
+Run with arr_size: 4096
+Run with basecase: 64
+Init started
+Init done 5.81741e-05 seconds.
+Parallel Bubble Sort Done in 0.029846 seconds.
+ 7
+Run with arr_size: 4096
+Run with basecase: 128
+Init started
+Init done 6.10352e-05 seconds.
+Parallel Bubble Sort Done in 0.0400159 seconds.
+ 8
+Run with arr_size: 4096
+Run with basecase: 256
+Init started
+Init done 5.60284e-05 seconds.
+Parallel Bubble Sort Done in 0.021121 seconds.
+ 9
+Run with arr_size: 4096
+Run with basecase: 512
+Init started
+Init done 6.19888e-05 seconds.
+Parallel Bubble Sort Done in 0.0385299 seconds.
+ 10
+Run with arr_size: 4096
+Run with basecase: 1024
+Init started
+Init done 5.6982e-05 seconds.
+Parallel Bubble Sort Done in 0.0234931 seconds.
+ 11
+Run with arr_size: 4096
+Run with basecase: 2048
+Init started
+Init done 5.88894e-05 seconds.
+Parallel Bubble Sort Done in 0.0707281 seconds.

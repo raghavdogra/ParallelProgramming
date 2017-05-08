@@ -1,0 +1,13 @@
+ 2
+Run with arr_size: 1048576
+Run with basecase: 32
+Init started
+Init done 0.0146949 seconds.
+Parallel Bubble Sort Done in 1338.66 seconds.
+ 3
+Run with arr_size: 1048576
+Run with basecase: 32
+Init started
+Init done 0.0147769 seconds.
+Parallel Bubble Sort Done in 1196.18 seconds.
+ 4
